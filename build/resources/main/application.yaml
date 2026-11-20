@@ -1,0 +1,9 @@
+ktor:
+  deployment:
+    port: 8080
+  application:
+    modules:
+      - me.silent.HttpKt.configureHttp
+      - me.silent.SecurityKt.configureSecurity
+      - me.silent.ResourcesKt.configureResources
+      - me.silent.RoutingKt.configureRouting
